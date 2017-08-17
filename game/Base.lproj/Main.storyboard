@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="game" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-K0-H1l">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text=" 0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAO-7k-G1y">
+                                <rect key="frame" x="16" y="580" width="150" height="66.5"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="5Gy-HJ-DWt">
+                                <rect key="frame" x="0.0" y="216.5" width="375" height="233"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splashy the cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-Xg-bov">
+                                <rect key="frame" x="65" y="40" width="245" height="73"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="62"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ro8-TG-IAF">
+                                <rect key="frame" x="0.0" y="216.5" width="375" height="233"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7L-cN-RoV">
+                                <rect key="frame" x="209" y="584.5" width="150" height="62"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mAO-7k-G1y" secondAttribute="bottom" constant="20.5" id="2l6-IQ-zVw"/>
+                            <constraint firstItem="Ro8-TG-IAF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4vM-rA-nLg"/>
+                            <constraint firstItem="I7L-cN-RoV" firstAttribute="width" secondItem="lSe-K0-H1l" secondAttribute="width" multiplier="0.4" id="6gv-17-J81"/>
+                            <constraint firstItem="lSe-K0-H1l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="88Q-L7-9BH"/>
+                            <constraint firstItem="5Gy-HJ-DWt" firstAttribute="width" secondItem="lSe-K0-H1l" secondAttribute="width" id="JRD-rt-7rb"/>
+                            <constraint firstItem="5Gy-HJ-DWt" firstAttribute="top" relation="lessThanOrEqual" secondItem="4S5-Xg-bov" secondAttribute="bottom" constant="119.5" id="JnE-We-nfN"/>
+                            <constraint firstItem="4S5-Xg-bov" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jso-8Y-wct"/>
+                            <constraint firstItem="I7L-cN-RoV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MQy-cu-CTR"/>
+                            <constraint firstItem="mAO-7k-G1y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qpu-TJ-jtB"/>
+                            <constraint firstItem="lSe-K0-H1l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Srv-0L-fJN"/>
+                            <constraint firstItem="4S5-Xg-bov" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="USo-yT-5h3"/>
+                            <constraint firstItem="Ro8-TG-IAF" firstAttribute="height" secondItem="5Gy-HJ-DWt" secondAttribute="height" id="WtH-wQ-5og"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lSe-K0-H1l" secondAttribute="bottom" id="Xum-Le-0oO"/>
+                            <constraint firstItem="Ro8-TG-IAF" firstAttribute="width" secondItem="5Gy-HJ-DWt" secondAttribute="width" id="boa-Is-RJC"/>
+                            <constraint firstItem="Ro8-TG-IAF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eAe-j1-l63"/>
+                            <constraint firstItem="mAO-7k-G1y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="fRn-TZ-H1X"/>
+                            <constraint firstAttribute="trailing" secondItem="lSe-K0-H1l" secondAttribute="trailing" id="hpy-Vq-gxe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I7L-cN-RoV" secondAttribute="bottom" constant="20.5" id="jBd-cy-q0t"/>
+                            <constraint firstItem="mAO-7k-G1y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="mcQ-7v-hvY"/>
+                            <constraint firstItem="5Gy-HJ-DWt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfn-AB-uUb"/>
+                            <constraint firstItem="5Gy-HJ-DWt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ner-eh-Gfv"/>
+                            <constraint firstItem="5Gy-HJ-DWt" firstAttribute="height" secondItem="lSe-K0-H1l" secondAttribute="height" multiplier="0.35" id="pZy-cu-lQP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="distanceLabel" destination="I7L-cN-RoV" id="deH-XV-gHv"/>
+                        <outlet property="imageView" destination="5Gy-HJ-DWt" id="8fk-Gj-wRg"/>
+                        <outlet property="timerLabel" destination="mAO-7k-G1y" id="LxK-9f-dBi"/>
+                        <outlet property="touchView" destination="Ro8-TG-IAF" id="nsf-el-v5u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Unknown" width="168" height="300"/>
+        <image name="cat" width="1969" height="1475"/>
+    </resources>
 </document>

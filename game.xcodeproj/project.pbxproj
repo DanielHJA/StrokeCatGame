@@ -14,6 +14,8 @@
 		65BA25171E2972520070DB2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BA25151E2972520070DB2A /* LaunchScreen.storyboard */; };
 		65BA25221E2972520070DB2A /* gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA25211E2972520070DB2A /* gameTests.swift */; };
 		65BA252D1E2972520070DB2A /* gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA252C1E2972520070DB2A /* gameUITests.swift */; };
+		65BA253B1E2986130070DB2A /* finished.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65BA253A1E2986130070DB2A /* finished.wav */; };
+		65BA253F1E2986930070DB2A /* cat_purr.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65BA253E1E2986930070DB2A /* cat_purr.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		65BA25281E2972520070DB2A /* gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BA252C1E2972520070DB2A /* gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameUITests.swift; sourceTree = "<group>"; };
 		65BA252E1E2972520070DB2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BA253A1E2986130070DB2A /* finished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = finished.wav; sourceTree = "<group>"; };
+		65BA253E1E2986930070DB2A /* cat_purr.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat_purr.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				65BA25131E2972520070DB2A /* Assets.xcassets */,
 				65BA25151E2972520070DB2A /* LaunchScreen.storyboard */,
 				65BA25181E2972520070DB2A /* Info.plist */,
+				65BA253E1E2986930070DB2A /* cat_purr.wav */,
+				65BA253A1E2986130070DB2A /* finished.wav */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -235,8 +241,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BA253F1E2986930070DB2A /* cat_purr.wav in Resources */,
 				65BA25171E2972520070DB2A /* LaunchScreen.storyboard in Resources */,
 				65BA25141E2972520070DB2A /* Assets.xcassets in Resources */,
+				65BA253B1E2986130070DB2A /* finished.wav in Resources */,
 				65BA25121E2972520070DB2A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
